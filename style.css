@@ -5,18 +5,124 @@
     --Grayish-Blue: hsl(201, 11%, 66%);
     /* typography */
     --ff: 'Bai Jamjuree', sans-serif;
-    --fs: 18px;
+    --fs-heading: 1.3rem;
+    --fs-paragraph: 0.7rem;
     --fw-400: 400;
     --fw-600: 600;
 
 }
+/* css reseting rules */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html, body {
+  height: 100%;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* Make images easier to work with */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /* Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+body{
+    font-family: var(--ff);
+    font-size: var(--fs-paragraph);
+    font-weight: var(--fw-400);
+    margin: 1rem;
+
+}
+h1, h2{
+    font-size: var(--fs-heading);
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--Dark-Grayish-Blue);
+}
+p{
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--Grayish-Blue); 
+}
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.a-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1rem;
+    padding: .2rem 1.5rem;
+    border-radius: 40px;
+}
+.link-ios{
+    background-color: var(--Strong-Cyan);
+}
+.link-mac{
+    background-color: var(--Light-Blue);
+}
+.image-gap{
+    margin-bottom: 2rem;
+}
 
 
 /* footer */
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
+ .footer-img-logo{
+    width: 20%;
+    margin-top: 2rem;
+} 
+.icon-size img{
+    width: 20%;
 }
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+.social-icons-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    
 }
+
