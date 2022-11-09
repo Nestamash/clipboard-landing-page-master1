@@ -125,6 +125,10 @@ a{
     grid-template-columns: repeat(3, 1fr); 
     
 }
+picture{
+  position: absolute;
+  inset: 0;
+}
 /* desktop design styles */
 @media(min-width:40em){
   .a-links{
@@ -148,13 +152,16 @@ a{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
+  margin: 5rem 0;
 }
 footer{
   margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  
   background-color: hsl(0, 0%, 90%);
+}
+footer div{
+  padding-top: 2rem;
 }
 
 }
