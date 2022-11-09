@@ -125,4 +125,34 @@ a{
     grid-template-columns: repeat(3, 1fr); 
     
 }
+/* desktop design styles */
+@media(min-width:40em){
+  .a-links{
+    flex-direction: row;
+    gap: 1rem; 
+}
+.two-column{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.icons-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 
+}
+.logo-wrapper{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+footer{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  
+  background-color: hsl(0, 0%, 90%);
+}
+
+}
